@@ -51,7 +51,7 @@ const PlayerWindow = ({ windowInfo }) => {
   useEffect(() => {
     const client = new Client({
       webSocketFactory: () => {
-        return new SockJS("http://localhost:8080/ws");
+        return new SockJS("https://media-sequencer-r03b.onrender.com/ws");
       },
 
       reconnectDelay: 3000,
